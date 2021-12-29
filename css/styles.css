@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 93px 0 96px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.empty {
+	display: none;
+}
+
+.header-logo {
+	width: 100px;
+	display: block;
+}
+
+.header-menu ul {
+	width: 403px;
+	display: flex;
+	justify-content: space-between;
+}
+
+ .menu-item {
+	list-style: none;
+}
+
+.menu-item a {
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 24px;
+	display: block;
+}
+
+.menu-item a:hover {
+	color: #708090;
+}
+
+.burger-icon {
+	display: none;
+}
+
+.slick-slider {
+	width: 100%;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 42px;
+}
+
+.slick-dots li button::before {
+	font-size: 14px;
+}
+
+.slick-dots {
+	bottom: -31px;
+}
+
+@media screen and (max-width: 1024px) {
+	.header-menu {
+		display: none;
+	}
+
+	.burger-icon {
+	width: 48px;
+	height: 31px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+	.burger-icon-inner,
+	.burger-icon:before,
+	.burger-icon:after {
+		content: "";
+		width: 48px;
+		height: 5px;
+		background: #000;
+		display: block;
+	}
+
+	.empty {
+		display: block;
+		width: 48px;
+	}
+}
