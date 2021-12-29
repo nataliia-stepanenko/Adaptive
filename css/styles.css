@@ -29,6 +29,11 @@ body {
 	display: block;
 }
 
+.header-logo path:hover {
+	fill: #F00;
+}
+
+
 .header-menu ul {
 	width: 403px;
 	display: flex;
