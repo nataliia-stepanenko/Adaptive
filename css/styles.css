@@ -58,7 +58,10 @@ body {
 	display: none;
 }
 
-.slick-slider {
+
+/*Slick-slider properties*/
+
+.slider img {
 	width: 100%;
 }
 
