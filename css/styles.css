@@ -75,6 +75,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+	.header {
+		padding: 48px 0 26px 0;
+	}
+
 	.header-menu {
 		display: none;
 	}
