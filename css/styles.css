@@ -8,21 +8,24 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+	list-style: none;
+}
+
 #container {
 	max-width: 1024px;
 	margin: 0 auto;
 }
 
-.header {
+.header-content {
 	min-height: 249px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
-.empty {
-	display: none;
-}
+/*Logo*/
 
 .header-logo {
 	display: block;
@@ -32,57 +35,156 @@ body {
 	fill: #F00;
 }
 
+/*Navigation*/
 
-.header-menu ul {
-	width: 403px;
+.nav-list {
 	display: flex;
-	justify-content: space-between;
+	column-gap: 80px;
 }
 
- .menu-item {
-	list-style: none;
-}
-
-.menu-item a {
+.nav-item-link {
 	cursor: pointer;
 	font-size: 20px;
 	line-height: 24px;
 	display: block;
 }
 
-.menu-item a:hover {
-	color: #708090;
+.nav-item-link:hover {
+	color: #F00;
 }
 
 .burger-icon {
 	display: none;
 }
 
+.hidden {
+	font-size: 0;
+}
 
 /*Slick-slider properties*/
 
 .slider img {
 	width: 100%;
-}
-
-.slick-dotted.slick-slider {
 	margin-bottom: 42px;
 }
 
-.slick-dots li button::before {
+/*.slick-dotted.slick-slider {
+	margin-bottom: 42px;
+}*/
+/*.slick-dots li button::before {
 	font-size: 14px;
 }
-
 .slick-dots {
 	bottom: -31px;
+}*/
+
+
+.text {
+	font-size: 28px;
+	line-height: 34px;
+	text-align: center;
+	margin-bottom: 42px;
+}
+
+.heading {
+	font-size: 40px;
+	line-height: 49px;
+	font-weight: 400;
+	text-transform: uppercase;
+	min-height: 80px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.articles {
+	min-height: 514px;
+	display: flex;
+	gap: 28px;
+	padding: 60px 0;
+}
+
+.article {
+	flex-basis: 500px;
+	min-height: 394px;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 50px;
+}
+
+.year {
+	font-size: 48px;
+	line-height: 22px;
+}
+
+.form {
+	margin-top: 47px;
+	margin-bottom: 100px;
+	min-height: 120px;
+	border: 1px solid #000;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 30px;
+}
+
+.form textarea {
+	width: 731px;
+	height: 22px;
+	font-size: 18px;
+	line-height: 22px;
+	border: none;
+	resize: none;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+	height: 60px;
+	min-width: 200px;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 34px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #F00;
 }
 
 @media screen and (max-width: 1024px) {
-	.header {
+	#container {
+		max-width: 919px;
+	}
+
+	.header-content {
 		min-height: 122px;
 	}
 
-	.header-menu {
+	.header-logo {
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+		top: 37px;
+	}
+
+	.header-logo svg {
+		height: 48px;
+	}
+
+	.nav {
 		display: none;
 	}
 
@@ -95,6 +197,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: absolute;
+	top: 46px;
+	right: 0;
 	}
 
 	.burger-icon-inner,
@@ -107,8 +212,82 @@ body {
 		display: block;
 	}
 
-	.empty {
+	.burger-icon:hover .burger-icon-inner {
+		background: #F00;
+	}
+
+	.burger-icon:hover:before {
+		background: #F00;
+	}
+
+	.burger-icon:hover:after {
+		background: #F00;
+	}
+
+	/*Menu-open*/
+
+	.menu-open {
+		width: 100%;
+		min-height: 316px;
+		background-color: #000;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	.menu-open .header-content {
+		max-width: 919px;
+		margin: 0 auto;
+		min-height: 316px;
+		justify-content: center;
+		align-items: flex-end;
+		margin-bottom: 111px;
+	}
+
+	.menu-open .header-logo  path {
+		fill: #fff;
+	}
+
+	.menu-open .header-logo path:hover {
+		fill: #F00;
+	}
+
+	.menu-open .burger-icon-inner {
+		display: none;
+	}
+
+	.menu-open .burger-icon:before,
+	.menu-open .burger-icon:after {
+		background: #fff;
+		position: relative;
+		left: 0;
+		transition: transform 0.4s;
+	}
+
+	.menu-open .burger-icon:before {
+		transform: rotate(45deg);
+		top: 13px;
+	}
+
+	.menu-open .burger-icon:after {
+		transform: rotate(-45deg);
+		top: -13px;
+	}
+	
+	.menu-open .nav {
 		display: block;
-		width: 48px;
+	}
+
+	.menu-open .nav-item-link {
+		color: #fff;
+	}
+
+	.menu-open .nav-item-link:hover {
+		color: #F00;
+	}
+
+	.menu-open + main .slider {
+		margin-top: 122px;
 	}
 }
