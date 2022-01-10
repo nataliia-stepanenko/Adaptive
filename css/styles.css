@@ -239,7 +239,7 @@ ul {
 
 	/*Menu-open*/
 
-	.menu-open {
+	.header.menu-open {
 		width: 100%;
 		min-height: 316px;
 		background-color: #000;
@@ -339,22 +339,17 @@ ul {
 	
 	#container {
 		max-width: 335px;
-		position: relative;
 	}
 
-/*	.header-logo {
+	.header {
+		position: absolute;
+	}
+
+	.header-logo {
 		display: none;
 	}
 
 	.nav {
-		display: none;
-	}
-
-	.header-content {
-		position: initial;
-	}*/
-
-	.header {
 		display: none;
 	}
 
