@@ -343,6 +343,11 @@ ul {
 
 	.header {
 		position: absolute;
+		width: 100%;
+	}
+
+	.header-content {
+		max-width: 335px;
 	}
 
 	.header-logo {
@@ -365,6 +370,16 @@ ul {
 	position: absolute;
 	top: 19px;
 	right: 0;
+	}
+
+	.burger-icon-inner,
+	.burger-icon:before,
+	.burger-icon:after {
+		content: "";
+		width: 48px;
+		height: 5px;
+		background: #000;
+		display: block;
 	}
 
 	.slider {
