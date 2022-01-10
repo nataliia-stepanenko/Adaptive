@@ -138,13 +138,18 @@ ul {
 
 .form textarea {
 	width: 731px;
-	height: 22px;
+	/*height: 22px;*/
+	height: 60px;
 	font-size: 18px;
 	line-height: 22px;
 	border: none;
 	resize: none;
-	color: #000;
 	font-family: 'Montserrat', sans-serif;
+	padding: 19px;
+}
+
+.form textarea::placeholder {
+	color: #000;
 }
 
 .button {
