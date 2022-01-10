@@ -154,8 +154,8 @@ ul {
 
 .form textarea:focus {
 	outline: none;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
+	border-top: 1px solid #154f30;
+	border-bottom: 1px solid #154f30;
 	overflow-y: hidden;
 }
 
