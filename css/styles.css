@@ -145,11 +145,18 @@ ul {
 	border: none;
 	resize: none;
 	font-family: 'Montserrat', sans-serif;
-	padding: 19px;
+	padding: 19px 0;
 }
 
 .form textarea::placeholder {
 	color: #000;
+}
+
+.form textarea:focus {
+	outline: none;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	overflow-y: hidden;
 }
 
 .button {
