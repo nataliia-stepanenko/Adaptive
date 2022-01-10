@@ -337,7 +337,12 @@ ul {
 
 @media screen and (max-width: 373px) {
 	
-	.header-logo {
+	#container {
+		max-width: 335px;
+		position: relative;
+	}
+
+/*	.header-logo {
 		display: none;
 	}
 
@@ -347,6 +352,10 @@ ul {
 
 	.header-content {
 		position: initial;
+	}*/
+
+	.header {
+		display: none;
 	}
 
 	.burger-icon {
@@ -361,6 +370,10 @@ ul {
 	position: absolute;
 	top: 19px;
 	right: 0;
+	}
+
+	.slider {
+		position: absolute;
 	}
 
 }
