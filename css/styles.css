@@ -32,7 +32,7 @@ ul {
 }
 
 .header-logo path:hover {
-	fill: #F00;
+	fill: #124429;
 }
 
 /*Navigation*/
@@ -50,7 +50,7 @@ ul {
 }
 
 .nav-item-link:hover {
-	color: #F00;
+	color: #124429;
 }
 
 .burger-icon {
@@ -173,7 +173,7 @@ ul {
 }
 
 .button:hover {
-	background-color: #F00;
+	background-color: #124429;
 }
 
 @media screen and (max-width: 1024px) {
@@ -225,15 +225,15 @@ ul {
 	}
 
 	.burger-icon:hover .burger-icon-inner {
-		background: #F00;
+		background: #124429;
 	}
 
 	.burger-icon:hover:before {
-		background: #F00;
+		background: #124429;
 	}
 
 	.burger-icon:hover:after {
-		background: #F00;
+		background: #124429;
 	}
 
 	/*Menu-open*/
@@ -262,7 +262,7 @@ ul {
 	}
 
 	.menu-open .header-logo path:hover {
-		fill: #F00;
+		fill: #124429;
 	}
 
 	.menu-open .burger-icon-inner {
@@ -296,7 +296,7 @@ ul {
 	}
 
 	.menu-open .nav-item-link:hover {
-		color: #F00;
+		color: #124429;
 	}
 
 	.menu-open + main .slider {
