@@ -353,11 +353,16 @@ ul {
 		display: none;
 	}
 
-	.header-content {
+	.header {
 		position: absolute;
-		left: 0;
-		top: 0;
+		width: 100%;
 		min-height: 332px;
+		z-index: 0;
+	}
+
+	.header-content {
+		min-height: 332px;
+		max-width: 335px;
 	}
 
 	.burger-icon {
@@ -374,13 +379,18 @@ ul {
 	}
 
 	.slider {
-		margin-bottom: 42px;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: -3;
 	}
 
 	.text {
 		font-size: 18px;
 		line-height: 22px;
 		margin-bottom: 23px;
+		margin-top: 229px;
 	}
 
 	.heading {
@@ -393,7 +403,11 @@ ul {
 		padding: 24px 0;
 	}
 
-	.article.year {
+	.article {
+		padding: 20px;
+	}
+
+	.article .year {
 		display: block;
 		font-size: 24px;
 		line-height: 29px;
@@ -425,7 +439,13 @@ ul {
 		text-align: center;
 	}
 
+	.form textarea:focus {
+		border: 2px solid #154f30;
+	}
+
 	.button {
 		width: 100%;
+		font-size: 24px;
+		line-height: 29px;
 	}
 }
