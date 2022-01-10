@@ -336,11 +336,31 @@ ul {
 }
 
 @media screen and (max-width: 373px) {
-	#header {
+	
+	.header-logo {
 		display: none;
 	}
 
-	.slider img {
-		
+	.nav {
+		display: none;
 	}
+
+	.header-content {
+		position: initial;
+	}
+
+	.burger-icon {
+	width: 48px;
+	height: 31px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	top: 19px;
+	right: 0;
+	}
+
 }
