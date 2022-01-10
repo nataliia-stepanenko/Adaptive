@@ -154,8 +154,9 @@ ul {
 
 .form textarea:focus {
 	outline: none;
-	border-top: 1px solid #154f30;
+	/*border-top: 1px solid #154f30;*/
 	border-bottom: 1px solid #154f30;
+	/*transition: border-bottom 2s;*/
 	overflow-y: hidden;
 }
 
@@ -302,4 +303,35 @@ ul {
 	.menu-open + main .slider {
 		margin-top: 122px;
 	}
+
+	
+
+	.text {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 38px
+	}
+
+	.heading {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.articles {
+		padding: 32px 0;
+		gap: 32px;
+		flex-wrap: wrap;
+	}
+
+	.article {
+		flex-basis: 100%;
+		min-height: 214px;
+		padding: 48px;
+	}
+
+	.form {
+		margin-top: 32px;
+		margin-bottom: 80px;
+	}
+
 }
