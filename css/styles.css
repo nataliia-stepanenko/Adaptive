@@ -383,6 +383,7 @@ ul {
 
 	.menu-open .header-content {
 		max-width: 335px;
+		min-height: 332px;
 		flex-direction: column;
 		margin-bottom: 0;
 		align-items: flex-start;
