@@ -369,7 +369,7 @@ ul {
 	}
 
 	.burger-icon {
-		top: 19px;
+		top: 20px;
 	}
 
 	.burger-icon-inner,
@@ -383,14 +383,16 @@ ul {
 
 	.menu-open .header-content {
 		max-width: 335px;
+		flex-direction: column;
+		margin-bottom: 0;
 	}
 
 	.menu-open .header-logo {
 		display: block;
-		position: static;
 		left: 0;
 		margin-left: 0;
-		top: 19px;
+		top: 20px;
+		margin-left: -10px;
 	}
 
 	.slider {
