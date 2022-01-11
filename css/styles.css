@@ -244,10 +244,10 @@ ul {
 	/*Menu-open*/
 
 	.header.menu-open {
+		position: absolute;
 		width: 100%;
 		min-height: 316px;
 		background-color: #000;
-		position: absolute;
 		top: 0;
 		left: 0;
 		z-index: 2;
@@ -349,13 +349,11 @@ ul {
 		max-width: 335px;
 	}
 
-	.header-logo {
-		display: none;
-	}
-
 	.header {
 		position: absolute;
 		width: 100%;
+		left: 0;
+		top: 0;
 		min-height: 332px;
 		z-index: 0;
 	}
@@ -363,12 +361,15 @@ ul {
 	.header-content {
 		min-height: 332px;
 		max-width: 335px;
+		margin: 0 auto;
+	}
+
+	.header-logo {
+		display: none;
 	}
 
 	.burger-icon {
-		position: absolute;
 		top: 19px;
-		right: 0;
 	}
 
 	.burger-icon-inner,
@@ -376,6 +377,20 @@ ul {
 	.burger-icon:after {
 		content: "";
 		background: #fff;
+	}
+
+	/*Menu-open*/
+
+	.menu-open .header-content {
+		max-width: 335px;
+	}
+
+	.menu-open .header-logo {
+		display: block;
+		position: static;
+		left: 0;
+		margin-left: 0;
+		top: 19px;
 	}
 
 	.slider {
