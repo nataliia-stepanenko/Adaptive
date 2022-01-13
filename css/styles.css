@@ -175,6 +175,7 @@ ul {
 	border: none;
 	border-radius: 8px;
 	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .button:hover {
